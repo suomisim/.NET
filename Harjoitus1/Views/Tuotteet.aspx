@@ -3,8 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <h2><%: Title %>.</h2>
     <p>Tuotteet jotka löytyvät varastostamme</p>
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="TuoteID" DataSourceID="SqlDataSource1" >
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="TuoteID" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" >
         <Columns>
+            <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="TuoteID" HeaderText="TuoteID" ReadOnly="True" SortExpression="TuoteID" />
             <asp:BoundField DataField="Nimi" HeaderText="Nimi" SortExpression="Nimi" />
             <asp:BoundField DataField="Hinta" HeaderText="Hinta" SortExpression="Hinta" />
