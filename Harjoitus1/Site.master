@@ -40,7 +40,7 @@
         </asp:ScriptManager>
         
         <div class="navbar navbar-inverse navbar-fixed-top navbar-custom">
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/yrityslogo.jpg"/>
+            <asp:Image ID="yrityslogo" runat="server" ImageUrl="~/images/yrityslogo.jpg"/>
             <div class="container container-custom">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
