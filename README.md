@@ -1,2 +1,2 @@
 # .NET
-Repository for .NET related stuff
+Repository for .NET related stuffs
