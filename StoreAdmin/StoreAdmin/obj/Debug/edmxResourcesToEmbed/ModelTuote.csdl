@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KankaKeidasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tuote">
+    <Key>
+      <PropertyRef Name="TuoteID" />
+    </Key>
+    <Property Name="TuoteID" Type="Int32" Nullable="false" />
+    <Property Name="Nimi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Hinta" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="Veroprosentti" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="KankaKeidasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tuote" EntityType="Self.Tuote" />
+  </EntityContainer>
+</Schema>
